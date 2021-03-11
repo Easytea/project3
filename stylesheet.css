@@ -1,22 +1,69 @@
-#container{
+body{
+    background-color: #E8F9FC;
+}
+
+#menucontainer{
     width: auto;
     height: 150px;
     background-color: #89CFF1;
     position: relative;
 }
 
+
 .stripe {
     width: 100px;
     height: 15px;
     background-color: white;
     margin: 20px 0;
-    margin-left: 8px;
+    margin-left: 15px;
+}
+
+#menu
+{
+    position: absolute;
+    z-index: 50;
+}
+
+.menuOff
+{
+    display: none;
+}
+
+.menuOn
+{
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #3776A1;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: center;
+    font-size: 20px;
+}
+
+li a:hover {
+    background-color: #5293BB;
+    color: white;
 }
 
 .dropbtn {
     background-color: #3776A1;
     color: black;
-    padding: 16px;
+    padding: 6px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -24,43 +71,8 @@
     height: 150px;
 }
 
-.menu {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    float: left;
-    overflow: visible;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: Bahnschrift;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: transparent;
-}
-
 #logo{
-    margin-left: 200px;
+    margin-left: 210px;
     top: 15%;
     background-image: url("others/logo.png");
     height: 100px;
@@ -69,13 +81,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: absolute;
 }
 
 .search{
     position: absolute;
     top: 30%;
-    margin-left: 500px;
+    margin-left: 550px;
     border-bottom: 2px black;
 }
 
@@ -105,7 +117,7 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    margin-left: 1075px;
+    margin-left: 1455px;
     float: left;
     background-color: #1B5886;
     display: inline-block;
@@ -127,12 +139,16 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    margin-left: 1220px;
+    margin-left: 1605px;
     float:  left;
     background-color: #FFBA19;
     display: inline-block;
     top: 0;
     overflow: visible;
 }
+
+/*--------------------------Menu-Balk--------------------------------*/
+
+
 
 

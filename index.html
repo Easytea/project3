@@ -3,33 +3,50 @@
 <head>
     <title>SpeedRUN</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        function buttonclick()
+        {
+            var menuList = document.getElementById("menu");
+            if (menuList.className == "menuOff")
+            {
+
+                menuList.className = "menuOn";
+            } else
+            {
+
+                menuList.className = "menuOff";
+            }
+        }
+    </script>
 </head>
 <body>
-    <div id="container">
-        <div class="menu">
-            <button class="dropbtn">
-                <div class="stripe"></div>
-                <div class="stripe"></div>
-                <div class="stripe"></div>
-            </button>
-            <div class="dropdown-content">
-                <a href="php/producten.php">Schoenen</a>
-                <a href="php/producten.php">Shirts</a>
-                <a href="php/producten.php">Broeken</a>
-            </div>
-        </div>
-        <div onclick="" id="logo">
-        </div>
+    <div id="menucontainer">
+        <button class="dropbtn" onclick="buttonclick();">
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+        </button>
+        <ul id="menu" class="menuOff">
+            <li><a href="php/producten.php">Schoenen ></a></li>
+            <li><a href="php/producten.php">Shirts ></a></li>
+            <li><a href="php/producten.php">Broeken ></a></li>
+        </ul>
+
+        <div onclick="location.href= 'index.html'" id="logo"></div>
+
         <div class="search">
             <input type="text" placeholder="Search...">
         </div>
-        <div id="winkelwagen">
+
+            <div onclick="location.href= 'php/winkelwagen.php'" id="winkelwagen">
             <img src="others/winkelwagen.jpg" alt="Avatar" class="avatar">
-        </div>
-        <div id="account">
+            </div>
+
+            <div onclick="location.href= 'html/account.html'" id="account">
             <img src="others/avatar.png" alt="Avatar" class="avatar">
-        </div>
+            </div>
     </div>
+<!--------------------------Menu-Balk-------------------------------->
 
 </body>
 </html>
