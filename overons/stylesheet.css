@@ -113,42 +113,98 @@ li a:hover {
     }
 }
 
-#account{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-left: 1455px;
-    float: left;
-    background-color: #1B5886;
-    display: inline-block;
-    top: 0;
-    overflow: visible;
-}
-
-.avatar {
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 25px;
-}
-
 #winkelwagen{
-    position: absolute;
-    width: 150px;
+    background-color: #89CFF1;
+    background-position: center;
+    background-image: url("http://localhost/project3/others/winkelwagen.png");
+    background-repeat: no-repeat;
     height: 150px;
-    margin-left: 1605px;
-    float:  left;
+    width: 150px;
+    float: right;
+}
+
+#winkelwagen:hover{
     background-color: #FFBA19;
-    display: inline-block;
-    top: 0;
-    overflow: visible;
+}
+
+
+#account{
+    background-color: #89CFF1;
+    background-position: center;
+    background-image: url("http://localhost/project3/others/account.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+#account:hover{
+    background-color: #1B5886;
 }
 
 /*--------------------------Menu-Balk--------------------------------*/
+#header{
+    height: 280px;
+    width: 101%;
+    background-color: #5293BB;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-family: Arial;
+    float: left;
+}
 
+#header h1{
+    margin-top: 25px;
+}
+
+#dagbericht{
+    margin-left: 50px;
+    margin-top: 60px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial;
+    background-color: #1B5886;
+    height: 1000px;
+    width: 700px;
+    float: left;
+}
+
+#dagberichtTekst{
+    margin: 90px;
+    height: 600px;
+    width: 500px;
+    background-color: #5293BB;
+    color: #5293BB;
+    font-size: 30px;
+    text-align: justify;
+    float: bottom;
+}
+
+#dagberichtTekst:hover{
+    background-color: #5293BB;
+    color: white;
+}
+
+#teamContainer{
+    float: left;
+    background-color: #89CFF1;
+    height: 1000px;
+    width: 900px;
+    margin: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+#teamFoto{
+    background-image: url("http://localhost/project3/others/groepsfoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 400px;
+}
 
 
 

@@ -113,42 +113,82 @@ li a:hover {
     }
 }
 
-#account{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-left: 1455px;
-    float: left;
-    background-color: #1B5886;
-    display: inline-block;
-    top: 0;
-    overflow: visible;
-}
-
-.avatar {
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 25px;
-}
-
 #winkelwagen{
-    position: absolute;
-    width: 150px;
+    background-color: #89CFF1;
+    background-position: center;
+    background-image: url("http://localhost/project3/others/winkelwagen.png");
+    background-repeat: no-repeat;
     height: 150px;
-    margin-left: 1605px;
-    float:  left;
+    width: 150px;
+    float: right;
+}
+
+#winkelwagen:hover{
     background-color: #FFBA19;
-    display: inline-block;
-    top: 0;
-    overflow: visible;
+}
+
+
+#account{
+    background-color: #89CFF1;
+    background-position: center;
+    background-image: url("http://localhost/project3/others/account.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+#account:hover{
+    background-color: #1B5886;
 }
 
 /*--------------------------Menu-Balk--------------------------------*/
 
+#header{
+    height: 280px;
+    width: 101%;
+    background-color: #5293BB;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-family: Arial;
+    float: left;
+}
 
+#header h1{
+    margin-top: 25px;
+}
+
+.serviceContainer{
+    width: 100%;
+    height: 600px;
+    float: left;
+    font-family: Arial;
+}
+
+.service{
+    height: 180px;
+    width: 300px;
+    background-color: #89CFF1;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    margin: 80px;
+    float: left;
+}
+
+.service:hover{
+    background-color: #FFBA19;
+}
+
+.yellowBar{
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background-color: #FFBA19;
+    color: white;
+}
 
 
