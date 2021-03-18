@@ -39,11 +39,9 @@
     </div>
 
     <div onclick="location.href= '../winkelwagen/index.php'" id="winkelwagen">
-        <img src="http://localhost/project3/others/winkelwagen.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div onclick="location.href= '../account/index.php'" id="account">
-        <img src="http://localhost/project3/others/avatar.png" alt="Avatar" class="avatar">
     </div>
 </div>
 <!--------------------------Menu-Balk-------------------------------->

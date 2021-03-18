@@ -113,42 +113,33 @@ li a:hover {
     }
 }
 
-#account{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    margin-left: 1455px;
-    float: left;
-    background-color: #1B5886;
-    display: inline-block;
-    top: 0;
-    overflow: visible;
-}
-
-.avatar {
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 25px;
-}
-
 #winkelwagen{
-    position: absolute;
-    width: 150px;
+    background-color: #89CFF1;
+    background-position: center;
+    background-image: url("http://localhost/project3/others/winkelwagen.png");
+    background-repeat: no-repeat;
     height: 150px;
-    margin-left: 1605px;
-    float:  left;
+    width: 150px;
+    float: right;
+}
+
+#winkelwagen:hover{
     background-color: #FFBA19;
-    display: inline-block;
-    top: 0;
-    overflow: visible;
+}
+
+
+#account{
+    background-color: #89CFF1;
+    background-position: center;
+    background-image: url("http://localhost/project3/others/account.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+#account:hover{
+    background-color: #1B5886;
 }
 
 /*--------------------------Menu-Balk--------------------------------*/
-
-
-
-
