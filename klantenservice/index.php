@@ -48,5 +48,92 @@
 </div>
 <!--------------------------Menu-Balk-------------------------------->
 
+<div id="header">
+    <h1>Klanten Service</h1>
+</div>
+
+<div class="serviceContainer">
+    <div class="service" onclick="location.href= 'mailto:speedRUN@bestelling.com'">
+        <div class="yellowBar">
+            <h1>Mijn Bestelling</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service" onclick="location.href= 'mailto:speedRUN@account.com'">
+        <div class="yellowBar">
+            <h1>Mijn Account</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service" onclick="location.href= 'mailto:speedRUN@retouneren.com'">
+        <div class="yellowBar">
+            <h1>Retouneren</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service" onclick="location.href= 'mailto:speedRUN@bezorging.com'">
+        <div class="yellowBar">
+            <h1>Bezorging</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service" onclick="location.href= 'mailto:speedRUN@betaling.com'">
+        <div class="yellowBar">
+            <h1>Betaling</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service"onclick="location.href= 'mailto:speedRUN@winkel.com'">
+        <div class="yellowBar">
+            <h1>Winkel Service</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service" onclick="location.href= 'mailto:speedRUN@product.com'">
+        <div class="yellowBar">
+            <h1>Over Product</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+    <div class="service" onclick="location.href= 'mailto:speedRUN@overig.com'">
+        <div class="yellowBar">
+            <h1>Overig</h1>
+        </div>
+        <p>
+            Tel: 12345678
+            <br/>
+            Email: test.mail@gmail.com
+        </p>
+    </div>
+</div>
+
 </body>
 </html>
