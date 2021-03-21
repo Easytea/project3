@@ -168,14 +168,14 @@ li a:hover {
     font-family: Arial;
     background-color: #1B5886;
     height: 1000px;
-    width: 700px;
+    width: 800px;
     float: left;
 }
 
 #dagberichtTekst{
-    margin: 90px;
-    height: 600px;
-    width: 500px;
+    margin: 20px;
+    height: 680px;
+    width: 760px;
     background-color: #5293BB;
     color: #5293BB;
     font-size: 30px;
