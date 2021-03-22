@@ -1,4 +1,3 @@
-
 body{
     background-color: #E8F9FC;
 }
@@ -75,7 +74,7 @@ li a:hover {
 #logo{
     margin-left: 210px;
     top: 15%;
-    background-image: url("../others/logo.png");
+    background-image: url("others/logo.png");
     height: 100px;
     width: 250px;
     background-color: #5293BB;
@@ -144,68 +143,113 @@ li a:hover {
 }
 
 /*--------------------------Menu-Balk--------------------------------*/
-#header{
-    height: 280px;
-    width: 101%;
+
+.addContainer{
+    width: 100%;
+    height: 400px;
     background-color: #5293BB;
+}
+
+.addContainer h2{
     color: white;
-    text-align: center;
-    font-size: 80px;
     font-family: Arial;
-    float: left;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 7%;
+    font-size: 40px;
 }
 
-#header h1{
-    margin-top: 25px;
-}
-
-#dagbericht{
-    margin-left: 50px;
-    margin-top: 60px;
-    color: white;
-    font-size: 60px;
-    text-align: center;
-    font-family: Arial;
-    background-color: #1B5886;
-    height: 1000px;
-    width: 800px;
-    float: left;
-}
-
-#dagberichtTekst{
-    margin: 20px;
-    height: 680px;
-    width: 760px;
-    background-color: #5293BB;
-    color: #5293BB;
-    font-size: 30px;
-    text-align: justify;
-    float: bottom;
-}
-
-#dagberichtTekst:hover{
-    background-color: #5293BB;
-    color: white;
-}
-
-#teamContainer{
-    float: left;
-    background-color: #89CFF1;
-    height: 1000px;
-    width: 900px;
-    margin: 60px;
-    text-align: center;
-    font-size: 30px;
-    font-family: Arial;
-}
-
-#teamFoto{
-    background-image: url("http://localhost/project3/others/groepsfoto.jpg");
+#addAfbeelding{
+    height: 400px;
+    width: 30%;
+    background-color: #E8F9FC;
+    background-image: url("http://localhost/project3/others/sportschoenen.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 900px;
-    height: 400px;
+    opacity: 0.5;
+    float: left;
+    z-index: -1;
 }
+
+#parallelogram{
+    width: 500px;
+    height: 400px;
+    background-color: #5293BB;
+    float: left;
+    margin-left: -10%;
+    -webkit-transform: skew(30deg);
+    z-index: -1;
+}
+
+#yellowBtn{
+    font-family: Arial;
+    width: 200px;
+    height: 75px;
+    background-color: #FFBA19;
+    text-align: center;
+    margin-left: 60%;
+    margin-top: 15%;
+    position: absolute;
+}
+
+#yellowBtn:hover {
+    border: 1px solid black;
+}
+
+#reclameContainer{
+    height: 250px;
+    width: 100%;
+}
+
+.reclame{
+    position: relative;
+    float: left;
+    margin-left: 300px;
+    background-color: #89CFF1;
+    height: 210px;
+    width: 250px;
+    margin-top: 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("http://localhost/project3/others/reclame.png");
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+
+.reclame:hover {
+    border: 1px solid black;
+}
+
+
+#footer{
+    width: 100%;
+    height: 350px;
+}
+
+.footerBtn{
+    position: relative;
+    float: left;
+    margin-left: 18%;
+    margin-top: 10%;
+    background-color: #3776A1;
+    height: 100px;
+    width: 200px;
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footerBtn:hover {
+    background-color: #1B5886;
+}
+
+.footerBtn h3{
+    margin-top: 10%;
+}
+
 
 
 
