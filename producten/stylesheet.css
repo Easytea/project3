@@ -143,3 +143,57 @@ li a:hover {
     background-color: #1B5886;
 }
 
+/*--------------------------Menu-Balk--------------------------------*/
+
+.product{
+    height: 410px;
+    width: 250px;
+    float: left;
+    margin: 25px;
+    background-color: #3776A1;
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+    color: white;
+}
+
+.product img{
+    margin-top: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 180px;
+}
+
+.btnToevoegen{
+    margin-top: 5%;
+    background-color: #FFBA19;
+    border: transparent;
+    height: 50px;
+    width: 140px;
+    font-size: larger;
+}
+
+.btnToevoegen:hover{
+    border: 1px solid black;
+}
+
+.productTable{
+    float: bottom;
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+    background-color: #89CFF1;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+}
+
+.productTable h3{
+    padding-top: 2%;
+    text-align: center;
+}
+
+.productTable table{
+    margin-top: 2%;
+}
