@@ -36,7 +36,10 @@
     <div onclick="location.href= '../index.html'" id="logo"></div>
 
     <div class="search">
-        <input type="text" placeholder="Search...">
+        <form action="../search.php" method="post">
+            <input type="text" placeholder="Search..." name="zoekopdracht">
+            <input type="submit" placeholder="Zoek">
+        </form>
     </div>
 
     <div onclick="location.href= '../winkelwagen/index.php'" id="winkelwagen">

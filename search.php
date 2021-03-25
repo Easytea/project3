@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <title>SpeedRUN</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="producten/stylesheet.css">
     <script>
         function buttonclick()
         {
@@ -28,30 +27,29 @@
         <div class="stripe"></div>
     </button>
     <ul id="menu" class="menuOff">
-        <li><a href="../producten/index.php">Schoenen ></a></li>
-        <li><a href="../producten/index.php">Shirts ></a></li>
-        <li><a href="../producten/index.php">Broeken ></a></li>
+        <li><a href="producten/index.php">Schoenen ></a></li>
+        <li><a href="producten/index.php">Shirts ></a></li>
+        <li><a href="producten/index.php">Broeken ></a></li>
     </ul>
 
-    <div onclick="location.href= '../index.html'" id="logo"></div>
+    <div onclick="location.href= 'index.html'" id="logo"></div>
 
     <div class="search">
-        <form action="../search.php" method="post">
-            <input type="text" placeholder="Search..." name="zoekopdracht">
-                <input type="submit" placeholder="Zoek">
-        </form>
+        <input type="text" placeholder="Search...">
     </div>
 
-    <div onclick="location.href= '../winkelwagen/index.php'" id="winkelwagen">
+    <div onclick="location.href= 'winkelwagen/index.php'" id="winkelwagen">
     </div>
 
-    <div onclick="location.href= '../account/index.php'" id="account">
+    <div onclick="location.href= 'account/index.php'" id="account">
     </div>
 </div>
 <!--------------------------Menu-Balk-------------------------------->
 <?php
 session_start();
+$zoekopdracht = $_POST["zoekopdracht"];
 $connect = mysqli_connect("localhost", "root", "", "speedrun");
+
 
 if(isset($_POST["add_to_cart"]))
 {
@@ -107,7 +105,7 @@ if(isset($_GET["action"]))
 <br />
 <div class="container">
     <?php
-    $query = "SELECT * FROM tbl_product ORDER BY id ASC";
+    $query = "SELECT * FROM tbl_product WHERE name LIKE '$zoekopdracht%'";
     $result = mysqli_query($connect, $query);
     if(mysqli_num_rows($result) > 0)
     {
@@ -117,7 +115,7 @@ if(isset($_GET["action"]))
             <div class="col-md-4">
                 <form method="post" action="index.php?action=add&id=<?php echo $row["id"]; ?>">
                     <div class="product">
-                        <img src="images/<?php echo $row["image"]; ?>"/><br />
+                        <img src="producten/images/<?php echo $row["image"]; ?>"/><br />
 
                         <h4 class="text-info"><?php echo $row["name"]; ?></h4>
 
@@ -177,9 +175,8 @@ if(isset($_GET["action"]))
             ?>
 
         </table>
-</div>
+    </div>
 </div>
 <br />
 </body>
 </html>
-
