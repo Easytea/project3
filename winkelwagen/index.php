@@ -54,11 +54,10 @@
     <h3>Uw Bestelling:</h3>
     <table>
         <tr>
-            <th width="30%">Product Naam</th>
+            <th width="40%">Product Naam</th>
             <th width="10%">Aantal</th>
             <th width="20%">Prijs</th>
-            <th width="15%">Totaal</th>
-            <th width="5%"></th>
+            <th width="20%">Totaal</th>
         </tr>
         <?php
         session_start();
@@ -71,18 +70,17 @@
             foreach($_SESSION["shopping_cart"] as $keys => $values)
             {
                 ?>
-                <tr>
+                <tr id="productList">
                     <td><?php echo $values["item_name"]; ?></td>
                     <td><?php echo $values["item_quantity"]; ?></td>
                     <td>€ <?php echo $values["item_price"]; ?></td>
                     <td>€ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
-                    <td><a href="index.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Verwijder</span></a></td>
                 </tr>
                 <?php
                 $total = $total + ($values["item_quantity"] * $values["item_price"]);
             }
             ?>
-            <tr>
+            <tr id="productTotal">
                 <td colspan="3" align="right"><b>Totaal</b></td>
                 <td align="right">€ <?php echo number_format($total, 2); ?></td>
                 <td></td>
@@ -90,7 +88,14 @@
             <?php
         }
         ?>
-
     </table>
+</div>
+    <div class="btnBetalen" onclick="location.href= ''">
+        <div class="btnBetalenIcon"></div>
+        <div class="arrow-right" id="1"></div>
+        <div class="arrow-right" id="2"></div>
+        <div class="arrow-right" id="3"></div>
+    </div>
+<h1 class="vdrWinkelen"><a href="../producten/index.php">Verder Winkelen</a></h1>
 </body>
 </html>
