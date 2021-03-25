@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 25 mrt 2021 om 06:43
--- Serverversie: 5.7.31
--- PHP-versie: 7.3.21
+-- Generation Time: Mar 25, 2021 at 09:07 AM
+-- Server version: 5.7.31
+-- PHP Version: 7.3.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `tbl_product`
+-- Table structure for table `tbl_product`
 --
 
 DROP TABLE IF EXISTS `tbl_product`;
@@ -34,10 +34,10 @@ CREATE TABLE IF NOT EXISTS `tbl_product` (
   `image` varchar(255) NOT NULL,
   `price` double(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 --
--- Gegevens worden geëxporteerd voor tabel `tbl_product`
+-- Dumping data for table `tbl_product`
 --
 
 INSERT INTO `tbl_product` (`id`, `name`, `image`, `price`) VALUES
@@ -47,7 +47,18 @@ INSERT INTO `tbl_product` (`id`, `name`, `image`, `price`) VALUES
 (4, 'On CLoudUltra', 'onCloudultra.jpg', 189.95),
 (5, 'Adidas Supernova', 'adidasSupernova.jpg', 89.95),
 (6, 'Adidas Adizero Pro', 'adidasAdizeroPro.jpg', 179.95),
-(7, 'Asics Gel Nimbus 23', 'asicsGelNimbus23.jpg', 169.95);
+(7, 'Asics Gel Nimbus 23', 'asicsGelNimbus23.jpg', 169.95),
+(8, 'Nike AirMax 1 Evolution of Icons', 'nikeAirMax1EvolutionIcons.jpg', 149.99),
+(9, 'Nike Revolution 5', 'nikeRevolution5.jpg', 69.69),
+(10, 'Adidas Runfalcon 2.0', 'adidasRunfalcon2.jpg', 84.95),
+(11, 'Asics Gel Contend 7', 'asicsGelContend7.jpg', 59.95),
+(12, 'Mizuno Wave Daichi 5', 'mizunoWaveDaichi5.jpg', 74.95),
+(13, 'Nike Park', 'nikePark.jpg', 25.60),
+(14, 'Nike Pro 5 Longsleeve', 'nikePro5Longsleeve.jpg', 34.99),
+(15, 'Nike Tiempo Premier', 'nikeTiempoPremier.jpg', 24.60),
+(16, 'Adidas Runner Shirt', 'adidasRunnerShirt.jpg', 39.95),
+(17, 'Adidas Own THe Run', 'adidasOwnTheRun.jpg', 29.95),
+(18, 'Craft Prime ', 'craftPrimeShirt.jpg', 29.95);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
