@@ -21,17 +21,9 @@
                 <button type="submit" class="#"> Login </button>
         </form>
         <label>Account aan maken?</label>
-        <div onclick="location.href= 'registration.php'" class="#">Registreren</div>
+        <div onclick="location.href= '/registration.php'" class="#">Registreren</div>
     </div>
     </div>
 </div>
 </body>
 </html>
-<?php
-// session_start);
-//
-// NIEUW DOCUMENT "LOGOUT.PHP"
-// <a href="logout.php>Uitloggen</a>"
-//
-//session_start
-?>

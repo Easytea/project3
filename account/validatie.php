@@ -18,7 +18,7 @@ $num = mysqli_num_rows($result);
 
 if($num == 1){
     $_SESSION['gbrn'] = $name;
-    header('location:project3/index.html');
+    header('location:../index.html');
 } else {
     header('location:login.php');
 
