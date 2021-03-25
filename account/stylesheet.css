@@ -1,3 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 body{
-    background-color: #E8F9FC;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #E8F9FC, #1596ea);
+}
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 550;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 42%;
+    background: linear-gradient(135deg, #E8F9FC, #1596ea);
+}
+.container form .gegevens{
+    display: inline-list-item;
+    justify-content: center;
+    margin: 10px 0 12px 0;
+}
+form .gegevens .invulvlak{
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+.gegevens .invulvlak .informatie{
+    display: block;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+.gegevens .invulvlak input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #1596ea;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease-in;
+}
+.gegevens .invulvlak input:focus,
+.gegevens .invulvlak input:valid{
+    border-color: #FFBA19;
+}
+form .button{
+    height: 40px;
+    margin: 30px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline:none;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #E8F9FC, #1596ea);
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #E8F9FC, #FFBA19);
+}
+.container .l{
+    height: 40px;
+    margin: 15px 0;
+}
+.container .l .aa{
+    font-size: 18px;
+    margin: 5px;
+}
+.container .l .loginlink{
+    text-align: center;
+    height: 24px;
+    width: 25%;
+    outline:none;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #E8F9FC, #1596ea);
+}
+.container .l .loginlink:hover{
+    background: linear-gradient(135deg, #E8F9FC, #FFBA19);
 }
