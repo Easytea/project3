@@ -149,3 +149,25 @@ li a:hover {
     background-color: #1B5886;
 }
 
+/*------------------------------------------------------------------*/
+
+.productTable{
+    float: left;
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+    background-color: #89CFF1;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+}
+
+.productTable h3{
+    padding-top: 2%;
+    text-align: center;
+}
+
+.productTable table{
+    margin-top: 2%;
+}
+
