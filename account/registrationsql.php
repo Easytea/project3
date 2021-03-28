@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-header('refresh: 2; URL=http://localhost/project3/account/login.php');//2 sec delay
+header('refresh: 2; URL=http://localhost/project3/account/index.php');//2 sec delay
 
 
 $con = mysqli_connect('localhost', 'root', '123');

@@ -20,7 +20,7 @@ if($num == 1){
     $_SESSION['gbrn'] = $name;
     header('location:../index.html');
 } else {
-    header('location:login.php');
+    header('location:index.php');
 
 }
 

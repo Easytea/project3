@@ -28,9 +28,10 @@
         <div class="stripe"></div>
     </button>
     <ul id="menu" class="menuOff">
-        <li><a href="../producten/index.php">Schoenen ></a></li>
-        <li><a href="../producten/index.php">Shirts ></a></li>
-        <li><a href="../producten/index.php">Broeken ></a></li>
+            <li><a href="producten/indexschoenen.php">Schoenen ></a></li>
+            <li><a href="producten/indexshirts.php">Shirts ></a></li>
+            <li><a href="producten/indexbroeken.php">Broeken ></a></li>
+            <li><a href="producten/index.php">Alles ></a></li>
     </ul>
 
     <div onclick="location.href= '../index.html'" id="logo"></div>

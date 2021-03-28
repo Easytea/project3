@@ -97,7 +97,7 @@ if(isset($_GET["action"]))
             {
                 unset($_SESSION["shopping_cart"][$keys]);
                 echo '<script>alert("Item Verwijderd")</script>';
-                echo '<script>window.location="index.php"</script>';
+                echo '<script>window.location="indexschoenen.php"</script>';
             }
         }
     }
@@ -108,7 +108,7 @@ if(isset($_GET["action"]))
 <br />
 <div class="container">
     <?php
-    $query = "SELECT * FROM tbl_product ORDER BY id ASC";
+    $query = "SELECT * FROM tbl_product WHERE object = 'schoen' ORDER BY id ASC";
     $result = mysqli_query($connect, $query);
     if(mysqli_num_rows($result) > 0)
     {
@@ -116,7 +116,7 @@ if(isset($_GET["action"]))
         {
             ?>
             <div class="col-md-4">
-                <form method="post" action="index.php?action=add&id=<?php echo $row["id"]; ?>">
+                <form method="post" action="indexschoenen.php?action=add&id=<?php echo $row["id"]; ?>">
                     <div class="product">
                         <img src="images/<?php echo $row["image"]; ?>"/><br />
 
@@ -162,7 +162,7 @@ if(isset($_GET["action"]))
                         <td><?php echo $values["item_quantity"]; ?></td>
                         <td>€ <?php echo $values["item_price"]; ?></td>
                         <td>€ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
-                        <td><a href="index.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Verwijder</span></a></td>
+                        <td><a href="indexschoenen.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Verwijder</span></a></td>
                     </tr>
                     <?php
                     $total = $total + ($values["item_quantity"] * $values["item_price"]);
