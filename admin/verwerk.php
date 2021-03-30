@@ -9,7 +9,7 @@ $lastid = $_POST["id"];
 
 $servername = "127.0.0.1";
 $username = "root";
-$password = "";
+$password = "123";
 $dbname = "speedrun";
 
 // Create connection

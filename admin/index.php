@@ -9,7 +9,7 @@
 $host = '127.0.0.1';
 $db   = 'speedrun';
 $user = 'root';
-$pass = '';
+$pass = '123';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
