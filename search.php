@@ -108,7 +108,18 @@ if(isset($_GET["action"]))
 <br />
 <div class="container">
     <?php
-    $query = "SELECT * FROM tbl_product WHERE `name` OR `price` LIKE '$zoekopdracht%'";
+    $query = "     
+        SELECT *
+        FROM tbl_product
+        WHERE name 
+        LIKE '$zoekopdracht%'
+        OR price 
+        LIKE '$zoekopdracht%'
+        OR object 
+        LIKE '$zoekopdracht%'
+        ";
+
+
     $result = mysqli_query($connect, $query);
     if(mysqli_num_rows($result) > 0)
     {
