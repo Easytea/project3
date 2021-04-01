@@ -52,7 +52,7 @@
 <!--------------------------Menu-Balk-------------------------------->
 <?php
 session_start();
-$connect = mysqli_connect("localhost", "root", "123", "speedrun");
+$connect = mysqli_connect("localhost", "root", "", "speedrun");
 
 if(isset($_POST["add_to_cart"]))
 {

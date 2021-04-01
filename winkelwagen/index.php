@@ -28,10 +28,10 @@
         <div class="stripe"></div>
     </button>
     <ul id="menu" class="menuOff">
-            <li><a href="producten/indexschoenen.php">Schoenen ></a></li>
-            <li><a href="producten/indexshirts.php">Shirts ></a></li>
-            <li><a href="producten/indexbroeken.php">Broeken ></a></li>
-            <li><a href="producten/index.php">Alles ></a></li>
+            <li><a href="../producten/indexschoenen.php">Schoenen ></a></li>
+            <li><a href="../producten/indexshirts.php">Shirts ></a></li>
+            <li><a href="../producten/indexbroeken.php">Broeken ></a></li>
+            <li><a href="../producten/index.php">Alles ></a></li>
     </ul>
 
     <div onclick="location.href= '../index.html'" id="logo"></div>
@@ -91,7 +91,7 @@
         ?>
     </table>
 </div>
-    <div class="btnBetalen" onclick="location.href= ''">
+    <div class="btnBetalen" onclick="location.href= '../winkelwagen/betaalmenu.php'">
         <div class="btnBetalenIcon"></div>
         <div class="arrow-right" id="1"></div>
         <div class="arrow-right" id="2"></div>

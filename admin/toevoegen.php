@@ -43,9 +43,8 @@ foreach ($stmt as $rij)
         <option value='shirt'>Shirt</option>
         <option value='broek'>Broek</option>
     </select>
-    <input type='text' placeholder='Foto id' name='image'>
-    <input type="file" name="upload">
-    <input type='submit' name='send'>
+    <input name="file" type="file">
+    <input type='submit' name='submit' value="Toevoegen">
 </form>
 </body>
 </html>
