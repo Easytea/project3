@@ -30,7 +30,7 @@ foreach ($stmt as $rij)
 }
 ?>
 
-<form action='verwerk.php' method='post' enctype="multipart/form-data">
+<form action='verwerk.php' method='POST' enctype="multipart/form-data">
     <input type='text' placeholder='ID' name='id' value="
     <?php
     echo $newid;
@@ -42,9 +42,12 @@ foreach ($stmt as $rij)
         <option value='schoen'>Schoen</option>
         <option value='shirt'>Shirt</option>
         <option value='broek'>Broek</option>
+        <input type="file" name="file">
+        <input type="submit" name="submit" value="Upload">
+        <p><strong>Notitie:</strong> U kunt alleen .jpg, .jpeg, .gif, .png bestanden uploaden.</p>
     </select>
-    <input name="file" type="file">
-    <input type='submit' name='submit' value="Toevoegen">
 </form>
 </body>
 </html>
+
+?>

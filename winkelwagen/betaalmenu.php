@@ -3,7 +3,7 @@
         <title>SpeedRUN Payment</title>
         <style>
           body{
-            font-family: bahnschrift;
+            font-family: arial;
           }
 
   .row {

@@ -28,6 +28,19 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
+if(isset($_POST['submit']))
+{
+  $path = "../producten/images";
+  $path = $path . basename( $_FILES['file']['name']);
 
-
+  if(move_uploaded_file($_FILES['file']['name'], $path)) {
+    echo "Het bestand".  basename( $_FILES['file']['name']). 
+    "Is geupload.";
+  } else{
+      echo " <br/> Bestand uploaden mislukt, probeer het opnieuw.";
+  }
+}
 ?>
+
+
+
