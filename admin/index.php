@@ -37,14 +37,14 @@ if(isset($_GET['aktie'])) {
 if($pdo)
 {
     $tabelData =
-        '    <h1>Product Overzicht</h1>
+        '<h1>Product Overzicht</h1>
         <tr>
-            <td>ID</td>
-            <td>Naam</td>
-            <td>Prijs</td>
-            <td>Object</td>
-            <td>Foto</td>
-            <td colspan="3">Opties</td>
+            <td><b>ID<b/></td>
+            <td><b>Naam<b/></td>
+            <td><b>Prijs (€)<b/></td>
+            <td><b>Object<b/></td>
+            <td><b>Foto<b/></td>
+            <td colspan="3"><b>Opties<b/></td>
         </tr>';
 
 
@@ -66,22 +66,22 @@ if($pdo)
             $tabelData .= '<td>';
                 $tabelData .= $rij['image'];
             $tabelData .= '</td>';
-            $tabelData .= '<td>';
+            $tabelData .= '<td class="verwijder">';
                 $tabelData .= '<a href="index.php?aktie=verwijder&id='.$rij['id'].'">verwijder</a>';
-            $tabelData .= '</td>';
-            $tabelData .= '<td>';
-                $tabelData .= '<a href="index.php?aktie=wijzig&id='.$rij['id'].'">wijzig</a>';
             $tabelData .= '</td>';
         $tabelData .= '</tr>';
     }
 }
 
-echo '<table border="1">';
+echo '<table>';
 echo $tabelData;
 echo '<tr>
-        <td colspan="8" style="text-align: center"><a href="toevoegen.php">Toevoegen</a></td>
+        <td colspan="8" style="text-align: center" class="toevoegen"><a href="toevoegen.php">Toevoegen</a></td>
       </tr>
 </table>';
 ?>
+
+<a href="../" id="linkIndex">Bekijk de website</a>
+
 </body>
 </html>
