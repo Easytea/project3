@@ -31,7 +31,7 @@
         <div class="aa">
             Al een account?
         </div>
-        <div onclick="location.href= 'index.php'" class="loginlink">Login</div>
+        <div onclick="location.href= 'index.php'"class="loginlink">Login</div>
     </div>
 </div>
 
