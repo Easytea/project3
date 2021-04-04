@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 28 mrt 2021 om 14:17
+-- Gegenereerd op: 04 apr 2021 om 16:57
 -- Serverversie: 5.7.31
 -- PHP-versie: 7.3.21
 
@@ -24,6 +24,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Tabelstructuur voor tabel `tbl_dagbericht`
+--
+
+DROP TABLE IF EXISTS `tbl_dagbericht`;
+CREATE TABLE IF NOT EXISTS `tbl_dagbericht` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bericht` text NOT NULL,
+  `datum` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `tbl_dagbericht`
+--
+
+INSERT INTO `tbl_dagbericht` (`id`, `bericht`, `datum`) VALUES
+(1, 'test123', '2021-04-04'),
+(2, 'Dit is een test bericht om te kijken of alles werkt', '2021-04-05'),
+(3, 'Vandaag heeft Ajax gewonnen met 1-2 tegen Hereveen', '2021-04-04');
+
+-- --------------------------------------------------------
+
+--
 -- Tabelstructuur voor tabel `tbl_product`
 --
 
@@ -35,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `tbl_product` (
   `price` double(10,2) NOT NULL,
   `object` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `tbl_product`
@@ -59,7 +82,7 @@ INSERT INTO `tbl_product` (`id`, `name`, `image`, `price`, `object`) VALUES
 (15, 'Nike Tiempo Premier', 'nikeTiempoPremier.jpg', 24.60, 'shirt'),
 (16, 'Adidas Runner Shirt', 'adidasRunnerShirt.jpg', 39.95, 'shirt'),
 (17, 'Adidas Own THe Run', 'adidasOwnTheRun.jpg', 29.95, 'shirt'),
-(18, 'Craft Prime ', 'craftPrimeShirt.jpg', 29.95, 'shirt');
+(18, 'Nike Jeans', '6069ee5bdf3109.07430486.jpg', 189.95, 'broek');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
