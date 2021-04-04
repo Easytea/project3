@@ -28,7 +28,7 @@ $stmt = $pdo->query('SELECT * FROM `tbl_product`;');
 if(isset($_GET['aktie'])) {
 
     if ($_GET['aktie'] == "verwijder") {
-        echo "" . $_GET['id'] . " verwijderen <br />";
+        echo '<script>alert("Artikel is verwijderd.")</script>';
         $query = 'DELETE FROM tbl_product WHERE id = ' . $_GET['id'];
         $stmt = $pdo->query($query);
         echo "<meta http-equiv=\"refresh\" content=\"1; url=../admin/index.php\" />";

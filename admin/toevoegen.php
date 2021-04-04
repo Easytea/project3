@@ -42,6 +42,7 @@ foreach ($stmt as $rij)
         <option value='schoen'>Schoen</option>
         <option value='shirt'>Shirt</option>
         <option value='broek'>Broek</option>
+        <option value='overig'>Overig</option>
         <input type="file" name="file">
         <input type="submit" name="submit" value="Upload">
         <p><strong>Notitie:</strong> U kunt alleen .jpg, .jpeg, .gif, .png bestanden uploaden.</p>
@@ -78,17 +79,17 @@ if(isset($_POST['submit']))
         
             }
             else{
-                echo "<b>Error:<b/> Uw bestand is te groot. <br/>";
+                echo '<script>alert("ERROR: Het bestand is te groot.")</script>';
             }
         }
 
         else{
-            echo "<b>Error:<b/> $fileError <br/>";
+            echo '<script>alert("ERROR: probeer opnieuw.")</script>';
         }
     }
 
     else{
-        echo "<b>Error:<b/> Dit bestand type is niet toegestaan. <br/>";
+        echo '<script>alert("ERROR: Dit bestand type is niet toegestaan.")</script>';
     }
 
     $name = $_POST["name"];
@@ -111,9 +112,9 @@ if(isset($_POST['submit']))
     VALUES ('$lastid', '$name', '$image', '$price', '$object')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "Artikel is toegevoegd!";
+        echo '<script>alert("Artikel is toegevoegd!")</script>';
     } else {
-        echo "Error: niet alle velden zijn ingevult. <br/>";
+        echo '<script>alert("ERROR: niet alle velden zijn ingevuld.")</script>';
     }
 
     mysqli_close($conn);
