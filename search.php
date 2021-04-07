@@ -50,6 +50,7 @@
 <!--------------------------Menu-Balk-------------------------------->
 <?php
 session_start();
+error_reporting(0);
 $zoekopdracht = $_POST["zoekopdracht"];
 $connect = mysqli_connect("localhost", "root", "", "speedrun");
 

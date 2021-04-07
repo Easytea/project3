@@ -36,7 +36,7 @@
          <li><a href="../overons">Over Ons ></a></li>
     </ul>
 
-    <div onclick="location.href= '../index.html'" id="logo"></div>
+    <div onclick="location.href= '../index.php'" id="logo"></div>
 
     <div class="search">
         <form action="../search.php" method="post">

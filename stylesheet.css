@@ -1,5 +1,5 @@
 body {
-  background-color: #e8f9fc;
+  background-color: rgba(88, 208, 255, 0.5);
 }
 
 #menucontainer {
@@ -156,7 +156,7 @@ li a:hover {
   color: white;
   font-family: Arial;
   position: absolute;
-  margin-left: 50%;
+  margin-left: 58%;
   margin-top: 7%;
   font-size: 40px;
 }
@@ -186,12 +186,16 @@ li a:hover {
 #yellowBtn {
   font-family: Arial;
   width: 200px;
-  height: 75px;
+  height: 100px;
   background-color: #ffba19;
   text-align: center;
   margin-left: 60%;
-  margin-top: 15%;
+  margin-top: 12%;
   position: absolute;
+}
+
+#yellowBtn h1{
+  margin-top: 5%;
 }
 
 #yellowBtn:hover {

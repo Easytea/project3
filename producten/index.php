@@ -36,7 +36,7 @@
         <li><a href="../overons">Over Ons ></a></li>
     </ul>
 
-    <div onclick="location.href= '../index.html'" id="logo"></div>
+    <div onclick="location.href= '../index.php'" id="logo"></div>
 
     <div class="search">
         <form action="../search.php" method="post">
@@ -61,8 +61,9 @@ if(isset($_POST["add_to_cart"]))
     if(isset($_SESSION["shopping_cart"]))
     {
         $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
-        if(!in_array($_GET["id"], $item_array_id))
-        {
+        if(!in_array($_GET["id"], $item_array_id)){
+            $_SESSION['item_id'] = $_GET["id"];
+        
             $count = count($_SESSION["shopping_cart"]);
             $item_array = array(
                 'item_id'			=>	$_GET["id"],
@@ -70,7 +71,8 @@ if(isset($_POST["add_to_cart"]))
                 'item_price'		=>	$_POST["hidden_price"],
                 'item_quantity'		=>	$_POST["quantity"]
             );
-            $_SESSION["shopping_cart"][$count] = $item_array;
+            header('location:../producten/verwerk.php');
+            
         }
         else
         {
@@ -139,6 +141,7 @@ if(isset($_GET["action"]))
             <?php
         }
     }
+
     ?>
     <div style="clear:both"></div>
     <br />
