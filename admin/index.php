@@ -178,8 +178,10 @@ foreach ($stmt as $rij)
 
 <h1>Dag bericht</h1>
 <form action='index.php' method='POST'>
-    <input type='text' placeholder='Bericht' name='bericht'>
+    <textarea rows="5" placeholder='Bericht' name='bericht'></textarea>
+    <br/>
     <input type='date' name='datum'>
+    <br/>
     <input type='submit' name='submit' value='upload'>
 </form>
 </body>
