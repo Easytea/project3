@@ -18,8 +18,18 @@ $num = mysqli_num_rows($result);
 
 if($num == 1){
     $_SESSION['gbrn'] = $name;
-    header('location:../index.html');
-} else {
+
+    if($_SESSION['gbrn'] == admin){
+    header('location:../admin/index.php');
+    }
+
+    else{
+        header('location:../index.html');
+    }
+
+} 
+
+else {
     header('location:index.php');
 
 }

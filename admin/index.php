@@ -1,3 +1,11 @@
+<?php
+error_reporting(0); 
+session_start();
+if($_SESSION['gbrn'] !== admin){
+    header('location:../index.html');
+    }
+?>
+
 <html>
     <head>
         <title>Admin</title>
@@ -5,7 +13,6 @@
     </head>
 <body>
 <?php
-error_reporting(0); 
 
 $host = '127.0.0.1';
 $db   = 'speedrun';
