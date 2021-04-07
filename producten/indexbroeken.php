@@ -31,7 +31,9 @@
         <li><a href="indexschoenen.php">Schoenen ></a></li>
         <li><a href="indexshirts.php">Shirts ></a></li>
         <li><a href="indexbroeken.php">Broeken ></a></li>
-        <li><a href="index.php">Alles ></a></li>
+        <li><a href="index.php">Alle Producten ></a></li>
+         <li><a href="../klantenservice">Klantenservice ></a></li>
+         <li><a href="../overons">Over Ons ></a></li>
     </ul>
 
     <div onclick="location.href= '../index.html'" id="logo"></div>

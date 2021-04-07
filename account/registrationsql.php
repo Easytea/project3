@@ -4,7 +4,7 @@ session_start();
 header('refresh: 2; URL=http://localhost/project3/account/index.php');//2 sec delay
 
 
-$con = mysqli_connect('localhost', 'root', '123');
+$con = mysqli_connect('localhost', 'root', '');
 
 mysqli_select_db($con, 'userregistration');
 

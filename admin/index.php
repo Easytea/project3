@@ -5,6 +5,7 @@
     </head>
 <body>
 <?php
+error_reporting(0); 
 
 $host = '127.0.0.1';
 $db   = 'speedrun';
@@ -79,11 +80,6 @@ echo '<tr>
         <td colspan="8" style="text-align: center" class="toevoegen"><a href="toevoegen.php">Toevoegen</a></td>
       </tr>
 </table>';
-?>
-
-<a href="../" id="linkIndex">Bekijk de website</a>
-
-<?php
 
 $host = '127.0.0.1';
 $db   = 'userregistration';
@@ -177,7 +173,7 @@ foreach ($stmt as $rij)
 <form action='index.php' method='POST'>
     <input type='text' placeholder='Bericht' name='bericht'>
     <input type='date' name='datum'>
-    <input type='submit' name='submit'>
+    <input type='submit' name='submit' value='upload'>
 </form>
 </body>
 </html>
@@ -208,3 +204,6 @@ if(isset($_POST['submit'])){
     mysqli_close($conn);
 
 ?>
+
+<a href="../" id="linkIndex">Bekijk de website</a>
+
